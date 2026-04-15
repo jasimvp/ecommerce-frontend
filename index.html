@@ -4,12 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce Frontend</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to our online store</h1>
+        <a href="#"><img src="assets/cartlogo.png" alt="logo" width="50px" class="logo"></a>
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass" style="color: #888;"></i>
+                <input type="search" placeholder="search products">
+            </div>
+
+            <button class="cart-btn">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                <span class="cart-badge" id="cart-count">3</span>
+            </button>
+
+            <button class="hamburger" id="hamburgerbtn">
+                <i class="fa-solid fa-bars hamburger-menu"></i>
+            </button>
+        </div>
     </header>
 
+    <div class="mobile-menu" id="mobilemenu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">LIMITED TIME OFFER</div>
+            <h1>Biggest sale<br> of the <span>Year!</span></h1>
+            <p>Shop the latest arrivals and grab up to 50% off on top brands. Free shipping on all orders above ₹999.</p>
+
+            <div class="hero-buttons">
+                <a href="" class="btn-shop">Shop now</a>
+                <a href="" class="btn-arrivals">View New Arrivals</a>
+            </div>
+
+            <div class="hero-trust">
+                <span class="trust-item">✓<strong>Free Shipping</strong>above ₹999</span>
+                <span class="trust-item">✓<strong>Easy Returns</strong>30 days</span>
+                <span class="trust-item">✓<strong>Secure</strong>Payments</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <p>Your product grid goes here.</p>
+    </section>
     <script src="scripts/app.js"></script>
 </body>
 </html>
