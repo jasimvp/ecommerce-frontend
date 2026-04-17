@@ -23,12 +23,12 @@
         <div class="header-right">
             <div class="search-bar">
                 <i class="fa-solid fa-magnifying-glass" style="color: #888;"></i>
-                <input type="search" placeholder="search products">
+                <input id="searchinput" type="search" placeholder="search products">
             </div>
 
             <button class="cart-btn">
                 <i class="fa-solid fa-cart-arrow-down"></i>
-                <span class="cart-badge" id="cart-count">3</span>
+                <span class="cart-badge" id="cart-count">0</span>
             </button>
 
             <button class="hamburger" id="hamburgerbtn">
@@ -63,9 +63,47 @@
         </div>
     </section>
 
+<!-- -------product section---------- -->
+
     <section id="products">
-        <h2>Our Products</h2>
-        <p>Your product grid goes here.</p>
+        <div class="section-header">
+            <h2>All Products</h2>
+            <p id="productcount">Loading...</p>
+        </div>
+        <div class="product-grid" id="productgrid">
+            <div class="skeleton">
+            <div class="skeleton-img"></div>
+            <div class="skeleton-body">
+                <div class="skeleton-line" style="width: 40%;"></div>
+                <div class="skeleton-line" style="width: 90%;"></div>
+                <div class="skeleton-line" style="width: 60%;"></div>
+            </div>
+            </div>
+            <div class="skeleton">
+            <div class="skeleton-img"></div>
+            <div class="skeleton-body">
+                <div class="skeleton-line" style="width: 40%;"></div>
+                <div class="skeleton-line" style="width: 90%;"></div>
+                <div class="skeleton-line" style="width: 60%;"></div>
+            </div>
+            </div>
+            <div class="skeleton">
+            <div class="skeleton-img"></div>
+            <div class="skeleton-body">
+                <div class="skeleton-line" style="width: 40%;"></div>
+                <div class="skeleton-line" style="width: 90%;"></div>
+                <div class="skeleton-line" style="width: 60%;"></div>
+            </div>
+            </div>
+            <div class="skeleton">
+            <div class="skeleton-img"></div>
+            <div class="skeleton-body">
+                <div class="skeleton-line" style="width: 40%;"></div>
+                <div class="skeleton-line" style="width: 90%;"></div>
+                <div class="skeleton-line" style="width: 60%;"></div>
+            </div>
+            </div>
+        </div>
     </section>
     <script src="scripts/app.js"></script>
 </body>
